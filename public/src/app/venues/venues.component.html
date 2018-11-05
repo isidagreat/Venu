@@ -1,0 +1,54 @@
+<div *ngFor="let venue of venues" class="tile is-parent">
+    <article class="tile is-child notification is-info">
+      <a href="/venue/{{venue.venue.id}}"><p class="title">{{venue.venue.displayName}}</p></a>
+      <p class="subtitle">{{venue.displayName}}</p>
+      <figure class="image is-4by3">
+        <img src="https://bulma.io/images/placeholders/640x480.png">
+      </figure>
+      <p>{{venue.location.city}}</p> <button class="is-dark">Like</button> <button class="is-dark">Share</button>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam autem debitis rerum mollitia. Totam, 
+        voluptatem. Nam voluptas natus sit assumenda accusantium enim voluptates dolore dolorum ipsam quisquam? Qui, at!</p>
+    </article>
+  </div>
+  <img src="../../assets/powered-by-sk/powered-by-songkick-black.png">
+  <nav class="navbar is-fixed-bottom is-dark is-transparent">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/home">
+          <img src="../../assets//powered-by-sk/Screen Shot 2018-10-02 at 6.28.18 PM.png" alt="VenuLogo" width="60" height="28">
+        </a>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="bd-tw-button button is-dark" href="/home">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>
+                    Home
+                  </span>
+                </a>
+              </p>
+              <p class="control">
+                <a class="button is-dark" href="/map">
+                  <span class="icon">
+                    <i class="fas fa-download"></i>
+                  </span>
+                  <span>Search</span>
+                </a>
+              </p>
+              <p class="control">
+                  <a class="button is-dark" href="/profile">
+                    <span class="icon">
+                      <i class="fas fa-download"></i>
+                    </span>
+                    <span>Profile</span>
+                  </a>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+  
