@@ -11,6 +11,7 @@ import { LgnRegComponent } from './lgn-reg/lgn-reg.component';
 import { SingleVenueComponent } from './single-venue/single-venue.component';
 import { VenuMapViewComponent } from './venu-map-view/venu-map-view.component';
 import { ProfileComponent } from './profile/profile.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProfileComponent } from './profile/profile.component';
     LgnRegComponent,
     SingleVenueComponent,
     VenuMapViewComponent,
-    ProfileComponent
+    ProfileComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,

@@ -1,15 +1,27 @@
-<div *ngFor="let venue of venues" class="tile is-parent">
+<div *ngFor="let venue of venues" class="tile is-parent is-hidden-desktop">
     <article class="tile is-child notification is-info">
       <a href="/venue/{{venue.venue.id}}"><p class="title">{{venue.venue.displayName}}</p></a>
       <p class="subtitle">{{venue.displayName}}</p>
-      <figure class="image is-4by3">
-        <img src="https://bulma.io/images/placeholders/640x480.png">
+      <figure class="image is-square">
+        <img src="https://bulma.io/images/placeholders/480x480.png">
       </figure>
       <p>{{venue.location.city}}</p> <button class="is-dark">Like</button> <button class="is-dark">Share</button>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam autem debitis rerum mollitia. Totam, 
         voluptatem. Nam voluptas natus sit assumenda accusantium enim voluptates dolore dolorum ipsam quisquam? Qui, at!</p>
     </article>
   </div>
+  <div class="columns is-multiline is-parent is-hidden-touch">
+      <div *ngFor="let venue of venues" class="column is-3 is-child">
+        <a href="/venue/{{venue.venue.id}}"><p class="title">{{venue.venue.displayName}}</p></a>
+        <p class="subtitle">{{venue.displayName}}</p>
+        <figure class="image is-square">
+          <img src="https://bulma.io/images/placeholders/480x480.png">
+        </figure>
+        <p>{{venue.location.city}}</p> <button class="is-dark">Like</button> <button class="is-dark">Share</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam autem debitis rerum mollitia. Totam, 
+          voluptatem. Nam voluptas natus sit assumenda accusantium enim voluptates dolore dolorum ipsam quisquam? Qui, at!</p>
+      </div>
+    </div>
   <img src="../../assets/powered-by-sk/powered-by-songkick-black.png">
   <nav class="navbar is-fixed-bottom is-dark is-transparent">
       <div class="navbar-brand">

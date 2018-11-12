@@ -1,0 +1,25 @@
+<div class="container is-fullhd">
+    <form (submit)="onSubmit()">
+      <div class="field">
+        <label class="label">Username</label>
+        <div class="control">
+          <input class="input" type="text" name="newUser.userName" placeholder="e.g Alex Smith" [(ngModel)] ="newUser.userName">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Password</label>
+        <div class="control">
+          <input class="input" type="password" name="newUser.password" placeholder="-----" [(ngModel)] ="newUser.password">
+        </div>
+      </div>
+      <div class="field">
+          <label class="label">Confirm Password</label>
+          <div class="control">
+            <input class="input" type="password" name="newUser.passwordCheck" placeholder="-----" [(ngModel)] ="newUser.passwordCheck">
+          </div>
+        </div>
+      <div class="control">
+        <button class="button is-primary">Submit</button>
+      </div>
+    </form>
+  </div>
